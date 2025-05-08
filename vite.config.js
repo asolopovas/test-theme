@@ -2,6 +2,7 @@ import {defineConfig} from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 import laravel from 'laravel-vite-plugin'
 import {wordpressPlugin, wordpressThemeJson} from '@roots/vite-plugin'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
     base: '/wp-content/themes/test-theme/public/build/',
@@ -26,6 +27,7 @@ export default defineConfig({
             disableTailwindFonts: false,
             disableTailwindFontSizes: false,
         }),
+        react()
     ],
     resolve: {
         alias: {
