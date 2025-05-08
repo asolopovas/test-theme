@@ -1,0 +1,42 @@
+{
+    "folders": [
+        {
+            "name": "test-theme",
+            "path": "."
+        },
+        {
+            "name": "test-plugin",
+            "path": "../../plugins/test-plugin"
+        },
+        {
+            "name": "root",
+            "path": "../../.."
+        }
+    ],
+    "settings": {
+        "search.exclude": {
+            "**/index.**.hot-update**": true,
+            "wp-includes/": true,
+            "wp-admin/": true,
+            "**/gutenberg/**": true,
+            "**/ultimate-addons-for-gutenberg/**": true,
+            "**/dist/**": true,
+            "**hot-update**": true,
+        },
+        "files.exclude": {
+            "**/widget-google-reviews/**": true,
+            "**/daftplug-instantify/**": true,
+            "**/wordpress-seo/**": true,
+            "**/gutenberg/**": true,
+            "**/fluent-smpt/**": true,
+            "**/ultimate-addons-for-gutenberg/**": true,
+            "*/**/cache/": true,
+            "*/**/.github/": true,
+            "*hot-update*": true,
+        },
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": []
+    }
+}
