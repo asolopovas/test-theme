@@ -35,6 +35,10 @@ add_filter('admin_head', function () {
 
     $dependencies = json_decode(Vite::content('editor.deps.json'));
 
+    if (Vite::isRunningHot()) {
+        echo Vite::reactRefresh();
+    }
+
     foreach ($dependencies as $dependency) {
         if (! wp_script_is($dependency)) {
             wp_enqueue_script($dependency);
@@ -42,7 +46,7 @@ add_filter('admin_head', function () {
     }
 
     echo Vite::withEntryPoints([
-        'resources/ts/editor.tsx',
+        // 'resources/ts/editor.tsx',
         'resources/ts/container.tsx',
     ])->toHtml();
 });
