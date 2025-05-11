@@ -14,6 +14,7 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/css/editor.css',
                 'resources/js/editor.tsx',
+                'resources/js/container.tsx',
             ],
             refresh: true,
         }),
