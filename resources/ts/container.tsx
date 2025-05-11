@@ -30,7 +30,7 @@ const edit: any = ({ attributes }: any) => {
     const containerRef = useRef<HTMLElement>(null)
     const blockProps = useBlockProps({
         ref: containerRef,
-        className: `lyn-id-${ blockId }`,
+        className: `test-id-${ blockId }`,
     })
 
     return (
@@ -48,7 +48,7 @@ const save: React.FC<BlockSaveProps<ContainerAttributes>> = ({ attributes }) => 
     } = attributes
 
     const blockProps = useBlockProps.save({
-        className: `lyn-id-${ blockId }`,
+        className: `test-id-${ blockId }`,
     })
 
     return (
